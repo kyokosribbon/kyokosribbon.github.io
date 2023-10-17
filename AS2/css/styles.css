@@ -1,0 +1,239 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Poppins and Josefin */
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    h2 {
+        font-size: 18pt;
+    }
+    
+    h3 {
+        font-size: 14pt;
+    }
+    
+    p {
+        font-size: 10pt;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+
+    h2 {
+        font-size: 18pt;
+    }
+    
+    h3 {
+        font-size: 14pt;
+    }
+    
+    p {
+        font-size: 10pt;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2, h3, p {
+    font-family: 'Poppins', sans-serif;  
+}
+
+h2 {
+    font-size: 22pt;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 18pt;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+
+
+/* header */
+
+header h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50pt;
+}
+
+header {
+    background-color: greenyellow;
+    margin: 10px;
+    padding: 1px;
+}
+
+/* nav */
+
+nav {
+    text-align: center;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/* about */
+
+figcaption {
+    font-size: 8pt;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.about {
+    background-color: gray;
+    margin: 10px;
+    padding-left: 28px;
+    padding-bottom: 10px;
+}
+
+.about h2 {
+    color: white;
+    padding-top: 10px;
+}
+
+.about p {
+    color: white;
+}
+
+button {
+    margin-bottom: 5px;
+    color: black;
+    background-color: greenyellow;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.about-img {
+    max-width: 80%;
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+/* my story */
+
+aside {
+    padding: 10px;
+}
+
+.main-header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: greenyellow;
+    color: black;
+}
+
+.my-story-img {
+    max-width: 50%;
+    display: flex;
+    gap: 10px;
+}
+
+aside h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.story2 {
+    text-align: right;
+}
+
+.aside-subhead {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+}
+
+/* Gallery */
+
+.grid {
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.grid-row1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grid-row1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grid-row2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-row3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grid-row3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+
+ footer p {
+    font-size: 7pt;
+    padding: 10px;
+ }
