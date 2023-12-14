@@ -1,0 +1,358 @@
+/* font insert */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital@0;1&display=swap');
+
+/* RED: E22C24 */
+
+/*  font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+*/
+
+body {
+    background-color: #e8e8e8;
+    margin: 0;
+}
+
+/* typefaces */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #E22C24;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700; 
+    color: #202020;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+h3 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #505050;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400; 
+    color: #202020;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+/* img */
+img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* logo at top */
+
+.logo {
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+/* nav */
+
+nav {
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+    text-transform: uppercase;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #202020;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+nav a {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-decoration: none;
+    color: #202020;
+}
+
+/* hero background image */
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(dad-hero.jpg);
+    background-size: fit;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 100px;
+    padding-top: 200px;
+
+}
+
+/* hero text */
+
+.hero h1 {
+    font-size: 6rem;
+    text-align: center;
+    line-height: 5rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-shadow: 4px 4px 6px #202020;
+}
+
+.hero h2 {
+    color: #e8e8e8;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 3rem;
+    text-shadow: 4px 4px 6px #202020;
+}
+
+/* hero button (facebook */
+
+.hero button {
+    font-size: 2rem;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    background-color: #E22C24;
+    color: #e8e8e8;
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #202020;
+    text-shadow: 2px 2px 4px #515151;
+}
+
+/* text below hero */
+
+.desc {
+    display: flex;
+    background-color: #202020;
+    padding-left: 10px;
+}
+
+.desc img {
+    max-width: 10%;
+}
+
+.desc h2 {
+    text-transform: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #e8e8e8;
+}
+
+.info {
+    background-color: #202020;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    display: grid;
+}
+
+.info h2 {
+    color: #e8e8e8;
+}
+
+/* product */
+
+.product {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+
+.item {
+    /* display: grid 1fr 1fr 1fr; */
+}
+.item video {
+    width: 100%;
+}
+/* gallery */
+
+.gallery {
+    display: grid 1fr;
+    grid-gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.gallery img {
+    max-width: 100%;
+
+}
+
+/* hours of operation */
+
+.hours h2 {
+    text-align: center;
+    color: #E22C24;
+}
+
+.hours ul li {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    color: #202020;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 100em){
+    /* for desktop */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media only screen and (max-width: 48em){
+    /* for tablet */
+    
+    .hero {
+        padding: 0;
+        background-position: center;
+        background-size: 70rem;
+        padding-bottom: 20px;
+    }
+    
+    .hero h1 {
+        font-size: 4rem;
+        line-height: 3.5rem;
+        padding-top: 20px;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 0;
+    }
+    
+    .product {
+        display: block;
+    }
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hours ul li {
+        padding-right: 20px;
+    }  
+}    
+
+@media only screen and (max-device-width: 30em) {
+        /* mobile */
+
+        /* typefaces */
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+        /* nav */
+
+    nav {
+        font-size: 1.5rem; 
+    }
+
+    /* hero */
+
+    .hero {
+        padding: 0;
+        background-position: center;
+        background-size: 40rem;
+        padding-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        padding: 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 0;
+    }
+
+    /* button */
+
+    .hero button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 2rem;
+    }
+
+    /* info */
+
+    .info h2 {
+        font-size: 1.2rem;
+    }
+
+    /* product */
+
+    .product {
+        display: block;
+    }
+
+    /* portfolio */
+
+    .gallery {
+        display: block;
+    }
+
+    /* hours */
+
+    .hours ul li {
+        padding-right: 50px;
+    }
+
+    /* about main */
+
+    .about {
+        display: grid 1fr;
+    }
+}
+
+
