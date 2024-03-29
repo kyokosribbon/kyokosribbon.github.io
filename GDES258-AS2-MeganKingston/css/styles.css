@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+}
+
+/* fonts */
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4rem;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.home-h1 {
+    text-align: center;
+}
+
+.home-h3 {
+    text-align: center;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 0.8rem;
+}
+
+ul li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none; 
+    color: black;
+    font-size: 1rem;
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;  
+}
+
+/* nav */
+
+:root {
+    --dark-color: rgb(188, 204, 211);
+    --light-color: rgb(224, 226, 229);
+    --heading-font: "Poppins" ,sans-serif; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background-color: var(--dark-color);
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    font-family: var(--heading-font);
+}
+nav a {
+   text-decoration: none;
+   color:var(--light-color);
+   padding-right: 20px;
+}
+#menu {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+#menu-toggle {
+    display: none;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: none;
+}
+#menu.active {
+    display: flex;
+}
+
+/* main */
+
+#products {
+    margin: 0px auto;
+    padding: 100px;
+
+}
+
+#all-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 50px;
+    padding: 20px;
+
+}
+
+img {
+    max-width: 80%;
+    object-fit: cover;
+}
+
+footer {
+    padding-left: 40px;
+}
+
+/* details header */
+
+.details-header {
+    text-align: center;
+}
+
+.details-main {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+}
+
+
+/* max-width: 480px is the same as saying 
+if width is less than 480px, run this css */
+
+/* 480px, mobile screen size */
+@media screen and (max-width: 30em) {
+
+/* nav */
+    #menu-toggle {
+        display: block;
+    }
+    #menu {
+        flex-direction: column;
+        background-color: var(--dark-color);
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul li {
+        text-align: center;
+    }
+
+    /* main */
+
+}
+
+/* 768px, tablet screen size */
+@media screen and (max-width: 48em) {
+
+     /* main */
+    /* all elements */
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    /* details */
+
+    .details-main {
+        text-align: center;
+    }
+
+}
+
