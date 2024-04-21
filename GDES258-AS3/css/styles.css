@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+
+}
+
+body {
+    margin: 0;
+}
+
+/* fonts */
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #202020;
+    margin-left: 20px;
+
+}
+
+h2 {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #505050;
+    margin-left: 20px;
+
+}
+
+h3 {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #505050;
+    margin-left: 20px;
+
+}
+
+p {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #505050;
+    margin-left: 20px;
+
+}
+
+/* button */
+
+button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    background-color: rgb(205, 160, 167);
+    border: 2px #202020 solid;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    background-color: rgb(205, 160, 167);
+    border: 2px #202020 solid;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #202020;
+}
+
+
+/* img */
+
+img {
+    max-width: 80%;
+}
+
+/* navbar */
+
+#navbar ul { 
+	margin: 0; 
+	padding: 20px; 
+	list-style-type: none; 
+	text-align: center; 
+	background-color: #202020; 
+
+	} 
+ 
+#navbar ul li {  
+	display: inline; 
+	} 
+ 
+#navbar ul li a { 
+	text-decoration: none; 
+	padding: .2em 1em; 
+	color: #fff; 
+	background-color: #202020; 
+	} 
+ 
+#navbar ul li a:hover { 
+	color: #202020; 
+	background-color: #fff; 
+	} 
+
+/* hero */
+ 
+#home-hero {
+    margin: 60px;
+}
+
+/* main */
+
+#all-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 60px;
+    margin-right: 60px;
+    row-gap: 100px;
+    column-gap: 100px;
+    padding-bottom: 60px;
+}
+
+/* portfolio */
+
+#portfolio-products {
+    display: inline-flex;
+    place-items: end center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/* max-width: 480px is the same as saying 
+if width is less than 480px, run this css */
+
+/* 480px, mobile screen size */
+@media screen and (max-width: 30em) {
+
+    /* nav */
+
+        #nav-link-container {
+            flex-direction: column;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        ul li {
+            text-align: center;
+        }
+    
+        /* main */
+    
+    }
+    
+    /* 768px, tablet screen size */
+    @media screen and (max-width: 48em) {
+    
+        /* all elements */
+        
+        h1 {
+            font-size: 1.5rem;
+        }
+    
+        h2 {
+            font-size: 1rem;
+        }
+    
+        h3 {
+            font-size: 1rem;
+        }
+    
+        p {
+            font-size: 0.8rem;
+        }
+
+        /* main */
+
+        #all-products {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-left: 60px;
+            margin-right: 60px;
+            row-gap: 100px;
+            column-gap: 100px;
+            padding-bottom: 60px;
+        }
+
+        /* button */
+
+        button {
+            font-size: 0.8rem;
+            border: 1.5px #202020 solid;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        a {
+            font-size: 0.8rem;
+            border: 1.5px #202020 solid;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #portfolio-products {
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: start center;
+            padding-left: 60px;
+            padding-right: 60px;
+            margin-bottom: 60px;
+        }
+
+        img {
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+            }
+    
